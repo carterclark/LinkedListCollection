@@ -119,7 +119,7 @@ public class TechJob implements Comparable<TechJob>{
 	@Override
 	public int compareTo(TechJob other) {
 		
-		return this.getJob().compareTo(other.getJob());
+		return this.getJob().compareToIgnoreCase(other.getJob());
 	}
 	
 	/**
